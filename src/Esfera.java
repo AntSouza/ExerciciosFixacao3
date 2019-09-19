@@ -1,6 +1,10 @@
 public class Esfera {
    private double raio;
    
+   public Esfera(double r){
+       setRaio(r);
+   }
+   
    public double getRaio(){
        return this.raio;
    }

@@ -1,25 +1,11 @@
 public class TestaCasa {
-    public static void main(String[] args){
-        Casa casa = new Casa();
-        Porta porta1 =  new Porta();
-        Porta porta2 =  new Porta();
-        Porta porta3 =  new Porta();
-        casa.setCor("Azul");
-        porta1.setDimensaoX(1.3);
-        porta1.setDimensaoY(1.5);
-        porta1.setDimensaoZ(0.3);
-        porta1.setAberta(true);
-        porta2.setDimensaoX(1.5);
-        porta2.setDimensaoY(1.7);
-        porta2.setDimensaoZ(0.9);
-        porta2.setAberta(true);
-        porta3.setDimensaoX(1.9);
-        porta3.setDimensaoY(1.6);
-        porta3.setDimensaoZ(0.4);
-        porta3.setAberta(true);
-        casa.setPorta1(porta1);
-        casa.setPorta2(porta2);
-        casa.setPorta3(porta3);
+    public static void main(String[] args){        
+        Porta porta1 =  new Porta(true, "Azul", 1.3, 1.5, 0.3);
+        Porta porta2 =  new Porta(true, "Branco", 1.5, 1.7, 0.9);
+        Porta porta3 =  new Porta(true, "Rosa", 1.9, 1.6, 0.4);
+        Casa casa = new Casa(true, porta1, porta2, porta3);
+        casa.pinta("Azul");
+        
         System.out.println("Cor inicial da casa: " + casa.getCor() + "\n" + "Quantas portas estao abertas: " + casa.quantasPortasEstaoAbertas());
         casa.pinta("Rosa");
         porta1.Fecha();

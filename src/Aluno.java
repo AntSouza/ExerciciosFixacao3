@@ -3,6 +3,11 @@ public class Aluno {
     private String cpf;
     private Data dataDeNascimento;
     
+    public Aluno(String n, String c, Data d){
+        setNome(n);
+        setCPF(c);
+        setDataDeNascimento(d);
+    }
     public String getNome(){
         return this.nome;
     }

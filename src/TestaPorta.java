@@ -1,11 +1,6 @@
 public class TestaPorta {
     public static void main(String[] args){
-        Porta porta = new Porta();
-        porta.setDimensaoX(1.1);
-        porta.setDimensaoY(1.9);
-        porta.setDimensaoZ(0.7);
-        porta.setCor("Vermelha");
-        porta.setAberta(true);        
+        Porta porta = new Porta(true, "Vermelha", 1.1, 1.9, 0.7);             
         System.out.println("Informações iniciais: " + "\n" + "Dimensoes X, Y e Z: " + porta.getDimensaoX() + "," + porta.getDimensaoY() + ","
         + porta.getDimensaoZ() + "\n" + "Cor: " + porta.getCor());  
         

@@ -1,7 +1,13 @@
 public class Data {
     private int dia;
     private int mes;
-    private int ano;  
+    private int ano;
+    
+    public Data(int d, int m, int a){
+        setDia(d);
+        setMes(m);
+        setAno(a);
+    }
     
     public int getDia(){
         return this.dia;

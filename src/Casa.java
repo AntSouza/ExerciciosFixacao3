@@ -5,6 +5,13 @@ public class Casa {
     private Porta porta2;
     private Porta porta3;
     
+    public Casa(boolean a, Porta p1, Porta p2, Porta p3){       
+        setAberta(a);
+        setPorta1(p1);
+        setPorta2(p2);
+        setPorta3(p3);
+    }
+    
     public String getCor(){
         return this.cor;
     }

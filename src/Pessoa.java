@@ -2,6 +2,11 @@ public class Pessoa {
     private String nome;
     private int idade;
     
+    public Pessoa(String n, int i){
+        setNome(n);
+        setIdade(i);        
+    }
+    
     public String getNome(){
         return this.nome;
     }
